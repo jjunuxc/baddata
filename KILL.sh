@@ -1,2 +1,2 @@
 #!/bin/sh
-docker kill $(docker ps|grep baddata|awk '{split($0,a," "); print a[1]}')
+docker kill $(docker ps|grep insecure|awk '{split($0,a," "); print a[1]}')
