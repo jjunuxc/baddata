@@ -4,4 +4,4 @@
 
 # starts a new container
 docker build -t tudo .
-docker run -t tudo
+docker run -p 80:80 -t tudo
