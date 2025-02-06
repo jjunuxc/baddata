@@ -2,7 +2,7 @@
     if (!isset($db)) {
         $host        = "host = 127.0.0.1";
         $port        = "port = 5432";
-        $dbname      = "dbname = tudo";
+        $dbname      = "dbname = insecure";
         $credentials = "user = postgres password = postgres";
 
         $db = pg_connect( "$host $port $dbname $credentials" );
