@@ -1,13 +1,13 @@
-# TUDO!!!!!
+# IA!!!!!
 echo
 echo
-echo "-=-=-=-[ TUDO ]-=-=-=-"
+echo "-=-=-=-[ I.A ]-=-=-=-"
 echo 
 echo 
 
 # start and configure psql server
 /etc/init.d/postgresql start
-sudo -u postgres psql -c "CREATE DATABASE tudo"
+sudo -u postgres psql -c "CREATE DATABASE insecure"
 sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres'"
 sudo -u postgres psql -f /app/setup.sql tudo
 
