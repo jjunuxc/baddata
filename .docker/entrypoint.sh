@@ -9,7 +9,7 @@ echo
 /etc/init.d/postgresql start
 sudo -u postgres psql -c "CREATE DATABASE insecure"
 sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres'"
-sudo -u postgres psql -f /app/setup.sql tudo
+sudo -u postgres psql -f /app/setup.sql insecure
 
 # start cron
 /etc/init.d/cron start
